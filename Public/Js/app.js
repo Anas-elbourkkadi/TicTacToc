@@ -1,17 +1,26 @@
-const square = document.querySelectorAll('.element')
+const square = document.querySelectorAll('.element');
+const btn = document.querySelector('button');
 
 let statuss = false;
 
-let addedElement = () => {
-    e.innerHTML = statuss
+let addedElement = (v) => {
+    v.innerHTML = statuss
         ? '<i class="bi bi-x"></i>'
         : '<i class="bi bi-circle"></i>';
-    statuss = !statuss
+    statuss = !statuss;
 }
+
+btn.addEventListener('click', () => {
+    square.forEach((e) => e.innerHTML = '');
+})
+
+
 
 square.forEach((e) => {
     e.addEventListener('click', () => {
-          addedElement();
+        if (!e.innerHTML) addedElement(e);
+
+
     })
 
 })
