@@ -63,6 +63,12 @@ body {
 .title div:nth-child(2) i {
     font-size: 30px;
 }
+.title div:nth-child(2) .bi-circle {
+    font-size: 20px;
+    margin-inline-end: 0.5rem;
+    color: var(--element-yellow);
+    padding-block: 1vh;
+}
 
 button {
     padding: 0.5rem;
