@@ -1,0 +1,111 @@
+:root {
+    --color-bd: #192a32;
+    --square-color: #1f3540;
+    --color-refrshe: #a7bec8;
+    --element-yellow: #f0ae32;
+    --scond-color-element: #28c2ba;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-bd);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.grandparent {
+    margin-block: 10vh;
+    width: 50%;
+    /* background-color: black;  */
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+
+}
+
+.title div:first-child {
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--element-yellow);
+
+}
+
+.title div:first-child i
+ {
+    font-size: 50px;
+    vertical-align: middle;
+    color: var(--scond-color-element);
+}
+
+
+.title div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--color-refrshe);
+    background-color: var(--square-color);
+    padding-inline: 1vw;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 10px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2),
+        0 6px 10px rgba(0, 0, 0, 0.2);
+    ;
+}
+
+.title div:nth-child(2) i {
+    font-size: 30px;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: var(--color-refrshe);
+    color: var(--square-color);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button i {
+    font-size: 20px;
+}
+
+.container-sqauir {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100%/3 - 1vw));
+    grid-template-rows: repeat(3, calc(100%/3 -4vh));
+    /* background-color: green; */
+    justify-content: center;
+    gap: 4vh 1vw;
+    margin-top: 5vh;
+    padding-inline: 6vw;
+}
+
+.container-sqauir div {
+    /* width: 100px; */
+    height: 50px;
+    
+
+    background-color: var(--square-color);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2),
+        0 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 80px;
+    color: var(--element-yellow);
+}
+
+.bi-x{
+    font-size: 120px;
+    color: var(--scond-color-element);
+}
